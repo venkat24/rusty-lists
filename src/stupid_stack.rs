@@ -11,7 +11,7 @@ enum Link {
 
 struct Node {
     elem: i32,
-    next: Link
+    next: Link,
 }
 
 impl StupidStack {
@@ -22,7 +22,7 @@ impl StupidStack {
 
     pub fn push(&mut self, value: i32) {
         // Create a new node
-        // When we deal with the Link enum, which is the type of head, need to 
+        // When we deal with the Link enum, which is the type of head, need to
         // use mem::replace to ensure that we're not copying head
         let new_node = Box::new(Node {
             elem: value,

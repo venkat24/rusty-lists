@@ -1,5 +1,5 @@
-pub mod stupid_stack;
 pub mod okay_stack;
+pub mod stupid_stack;
 
 #[cfg(test)]
 mod tests {
