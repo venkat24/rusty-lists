@@ -12,7 +12,7 @@ type Link<T> = Option<Box<Node<T>>>;
 impl<T> OkayStack<T> {
     pub fn new() -> Self {
         // Construct an empty stack
-        OkayStack { head: None }
+        Self { head: None }
     }
 
     pub fn push(&mut self, value: T) {
